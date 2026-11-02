@@ -405,4 +405,3 @@ examples/        # example configs
 ## License
 
 MIT [LICENSE](LICENSE) - Copyright (c) 2026 Eugen Rof
- 
