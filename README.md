@@ -30,7 +30,7 @@ _A failed run: the page background changed from `yellow` to `greenyellow`. The r
 Requirements: Node.js 18.18+.
 
 ```bash
-git clone https://github.com/<your-username>/vtest-playwright.git
+git clone https://github.com/eugenrof/vtest-playwright.git
 cd vtest-playwright
 npm install                         # installs dependencies (required before build)
 npx playwright install chromium     # add firefox / webkit if you use them
