@@ -135,8 +135,6 @@ You should see something like this:
 - **Diff** highlights what changed. See [Reading the diff image](#reading-the-diff-image) below.
 - **Overlay slider** (expand it under the images) stacks the two captures on top of each other. Drag the slider to reveal the current capture on the left and the baseline on the right, so you can spot exactly where things moved or changed colour.
 
-![Overlay slider: greenyellow current capture on the left, yellow baseline on the right](demo/report_example_slider.png)
-
 **5. Approve the change**
 
 ```bash
