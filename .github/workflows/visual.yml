@@ -19,7 +19,7 @@ jobs:
           npm run build
 
       - name: Run visual tests
-        run: node dist/cli.js test
+        run: node dist/cli.js test --url https://example.com
 
       - name: Upload report
         if: always()
