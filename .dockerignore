@@ -1,0 +1,4 @@
+node_modules
+dist
+.vtest/output
+.git

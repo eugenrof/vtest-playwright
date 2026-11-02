@@ -1,0 +1,6 @@
+node_modules/
+dist/
+.vtest/output/
+*.log
+.DS_Store
+# Baselines (.vtest/baselines) are meant to be committed.

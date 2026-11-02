@@ -1,0 +1,29 @@
+name: Visual tests
+
+on:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  visual:
+    runs-on: ubuntu-latest
+    # Same image used for local Docker runs => identical font rendering.
+    # Keep the tag in sync with the "playwright" version in package.json.
+    container: mcr.microsoft.com/playwright:v1.49.1-noble
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install & build
+        run: |
+          npm install
+          npm run build
+
+      - name: Run visual tests
+        run: node dist/cli.js test
+
+      - name: Upload report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: vtest-report
+          path: .vtest/output

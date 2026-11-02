@@ -1,0 +1,47 @@
+{
+  "name": "vtest-playwright",
+  "version": "0.1.0",
+  "description": "URL-driven visual regression testing CLI built on Playwright + TypeScript",
+  "type": "module",
+  "license": "MIT",
+  "bin": {
+    "vtest": "dist/cli.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=18.18"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "dev": "tsx src/cli.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "vtest": "node dist/cli.js",
+    "browsers": "playwright install chromium",
+    "demo": "python3 -m http.server 8080 --directory demo"
+  },
+  "keywords": [
+    "playwright",
+    "visual-testing",
+    "visual-regression",
+    "screenshot",
+    "typescript",
+    "qa"
+  ],
+  "dependencies": {
+    "commander": "^12.1.0",
+    "pixelmatch": "^5.3.0",
+    "playwright": "1.49.1",
+    "pngjs": "^7.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "@types/pixelmatch": "^5.2.6",
+    "@types/pngjs": "^6.0.5",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0",
+    "vitest": "^2.1.0"
+  }
+}

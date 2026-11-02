@@ -1,0 +1,32 @@
+{
+  "baseUrl": "https://playwright.dev",
+  "pages": [
+    { "name": "home", "url": "/" },
+    {
+      "name": "docs-intro",
+      "url": "/docs/intro",
+      "hide": [".cookie-banner"],
+      "mask": ["[data-testid='last-updated']"]
+    },
+    {
+      "name": "search-modal",
+      "url": "/",
+      "fullPage": false,
+      "steps": [
+        { "type": "click", "selector": "button.DocSearch" },
+        { "type": "fill", "selector": "input.DocSearch-Input", "value": "locator" },
+        { "type": "wait", "ms": 500 }
+      ]
+    }
+  ],
+  "browsers": ["chromium"],
+  "viewports": [
+    { "name": "desktop", "width": 1280, "height": 800 },
+    { "name": "mobile", "width": 390, "height": 844 }
+  ],
+  "threshold": 0.1,
+  "maxDiffRatio": 0.001,
+  "fullPage": true,
+  "hide": [],
+  "freezeTime": "2026-01-01T12:00:00Z"
+}
