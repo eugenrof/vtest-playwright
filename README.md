@@ -1,6 +1,6 @@
 # vtest - URL-driven visual regression testing with Playwright + TypeScript
 
-A small, dependency-light CLI that does visual testing for **any web app you can reach by URL** — no changes to the app's code required. Point it at pages, approve a baseline, and from then on every run tells you exactly which pages changed and how.
+A small, dependency-light CLI that does visual testing for **any web app you can reach by URL** - no changes to the app's code required. Point it at pages, approve a baseline, and from then on every run tells you exactly which pages changed and how.
 
 ```bash
 vtest init                 # create a config
