@@ -19,7 +19,7 @@ jobs:
           npm run build
 
       - name: Run visual tests
-        run: node dist/cli.js test --url https://example.com
+        run: node dist/cli.js test --url https://example.com --create-missing
 
       - name: Upload report
         if: always()
